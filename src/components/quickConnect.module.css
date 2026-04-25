@@ -1,0 +1,23 @@
+.childrenContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #7a4eff;
+    color: white;
+    cursor: pointer;
+}
+
+.childrenContainer:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
