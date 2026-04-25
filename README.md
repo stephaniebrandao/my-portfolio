@@ -1,73 +1,53 @@
-# React + TypeScript + Vite
+🚀 My Personal Portfolio
+This is my personal portfolio, designed to showcase my projects, skills, and contact information in a clean, modern, and professional way.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠 Tech Stack
+React: Library for building the user interface.
 
-Currently, two official plugins are available:
+TypeScript: Ensuring robust and type-safe code.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Vite: Fast and efficient build tool.
 
-## React Compiler
+CSS/Tailwind: Styled for a responsive and modern experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✨ Features
+Minimalist & Responsive Design: Works seamlessly on desktops and mobile devices.
 
-## Expanding the ESLint configuration
+Quick Links: Easy access to my LinkedIn, GitHub, and email.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+About Me: A section dedicated to my professional background and goals.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Project Showcase: A curated list of my work with direct links to GitHub repositories.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Resume Access: Easily download my updated CV in PDF format.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🚀 How to Run Locally
+1. Clone the repository:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+bash
+git clone https://github.com/stephaniebrandao/my-portfolio.git
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. Navigate to the project folder:
+bash
+cd my-portfolio
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. Install the dependencies:
+
+bash
+npm install
+
+4. Start the development server:
+
+bash
+npm run dev
+
+📬 Contact
+LinkedIn: https://www.linkedin.com/in/stephanie-brandao/
+
+Email: salbuquerque.md@gmail.com
+
+GitHub: github.com/stephaniebrandao
+
+
+
+Developed by Stephanie Brandão
