@@ -24,14 +24,21 @@
     margin: 10px 0;
 }
 
-.container > button {
+.container > a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.container > a > button {
     background-color: #7a4eff;
     color: white;
     cursor: pointer;
     border-radius: 5px;
+    width: 100%;
 }
 
-.container > button:hover {
+.container > a > button:hover {
     background-color: #1A1A1A;
     color: white;
     cursor: pointer;
