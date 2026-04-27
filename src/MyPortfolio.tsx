@@ -1,7 +1,8 @@
 import { FaAt, FaGithub, FaLinkedinIn, FaRegCopyright } from "react-icons/fa";
 import stephanie from "./images/stephanie.png";
 import playground from "./images/css-playground.png";
-import gameboy from "./images/gameboy.png"
+import gameboy from "./images/gameboy.png";
+import flore from "./images/flore-odonto.png"
 import styles from "./myPortfolio.module.css";
 import QuickConnect from "./components/QuickConnect";
 import Card from "./components/Card";
@@ -32,19 +33,19 @@ function MyPortfolio() {
             <h3>Quick Connect</h3>
             <div className={styles.insideQuickContainer}>
               <a
-                href="https://www.linkedin.com/in/stephanie-brandao"
+                href={"https://www.linkedin.com/in/stephanie-brandao"}
                 target="_blank"
               >
                 <QuickConnect>
                   <FaLinkedinIn />
                 </QuickConnect>
               </a>
-              <a href="https://github.com/stephaniebrandao" target="_blank">
+              <a href={"https://github.com/stephaniebrandao"} target="_blank">
                 <QuickConnect>
                   <FaGithub />
                 </QuickConnect>
               </a>
-              <a href="mailto: salbuquerque.md@gmail.com">
+              <a href={"mailto: salbuquerque.md@gmail.com"}>
                 <QuickConnect>
                   <FaAt />
                 </QuickConnect>
@@ -71,13 +72,21 @@ function MyPortfolio() {
           subtitle={
             "Interactive web tool that lets you customize card styles in real-time."
           }
+          link={"https://github.com/stephaniebrandao/css-playground.git"}
         />
         <Card
           image={gameboy}
           title={"Game Boy Color"}
+          subtitle={"A GameBoy Color project to show the first 151 Pokémons."}
+          link={"https://github.com/stephaniebrandao/PokemonGameBoyColor.git"}
+        />
+        <Card
+          image={flore}
+          title={"Flore Odontológica"}
           subtitle={
-            "A GameBoy Color project to show the first 151 Pokémons."
+            "A professional website, elevating the clinic's digital presence."
           }
+          link={"https://github.com/stephaniebrandao/project-flore-odontologica.git"}
         />
         <Card
           image={playground}
@@ -85,6 +94,7 @@ function MyPortfolio() {
           subtitle={
             "Interactive web tool that lets you customize card styles in real-time."
           }
+          link={""}
         />
         <Card
           image={playground}
@@ -92,20 +102,21 @@ function MyPortfolio() {
           subtitle={
             "Interactive web tool that lets you customize card styles in real-time."
           }
-        />
-        <Card
-          image={playground}
-          title={"CSS Playground"}
-          subtitle={
-            "Interactive web tool that lets you customize card styles in real-time."
-          }
+          link={""}
         />
       </div>
 
       <footer>
         <FaRegCopyright />
         <p>
-          {currentYear} Stephanie Brandao. All rights reserved. | <a className={styles.linkCV} href="/public/CV-frontend-stephanie-brandao.pdf" download>Get CV (PDF)</a>
+          {currentYear} Stephanie Brandao. All rights reserved. |{" "}
+          <a
+            className={styles.linkCV}
+            href="/public/CV-frontend-stephanie-brandao.pdf"
+            download
+          >
+            Get CV (PDF)
+          </a>
         </p>
       </footer>
     </>
