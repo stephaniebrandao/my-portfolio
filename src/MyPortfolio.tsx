@@ -12,6 +12,10 @@ function MyPortfolio() {
 
   return (
     <>
+    <head>
+      <link rel="icon" type="image/svg+xml" href="/public/favicon.ico" />
+      <title>Hello, World! I'm Stephanie!</title>
+    </head>
       <nav>
         <div>
           <img
