@@ -2,7 +2,7 @@ import { FaAt, FaGithub, FaLinkedinIn, FaRegCopyright } from "react-icons/fa";
 import stephanie from "./images/stephanie.png";
 import playground from "./images/css-playground.png";
 import gameboy from "./images/gameboy.png";
-import flore from "./images/flore-odonto.png"
+import flore from "./images/flore-odonto.png";
 import styles from "./myPortfolio.module.css";
 import QuickConnect from "./components/QuickConnect";
 import Card from "./components/Card";
@@ -12,10 +12,10 @@ function MyPortfolio() {
 
   return (
     <>
-    <head>
-      <link rel="icon" type="image/svg+xml" href="/public/favicon.ico" />
-      <title>Hello, World! I'm Stephanie!</title>
-    </head>
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/public/favicon.ico" />
+        <title>Hello, World! I'm Stephanie!</title>
+      </head>
       <nav>
         <div>
           <img
@@ -76,13 +76,17 @@ function MyPortfolio() {
           subtitle={
             "Interactive web tool that lets you customize card styles in real-time."
           }
-          link={"https://github.com/stephaniebrandao/css-playground.git"}
+          gitLink={"https://github.com/stephaniebrandao/css-playground.git"}
+          onlineLink={"css-playground-sucq.vercel.app"}
         />
         <Card
           image={gameboy}
           title={"Game Boy Color"}
           subtitle={"A GameBoy Color project to show the first 151 Pokémons."}
-          link={"https://github.com/stephaniebrandao/PokemonGameBoyColor.git"}
+          gitLink={
+            "https://github.com/stephaniebrandao/PokemonGameBoyColor.git"
+          }
+          onlineLink={"pokemon-gameboy-color.vercel.app"}
         />
         <Card
           image={flore}
@@ -90,7 +94,10 @@ function MyPortfolio() {
           subtitle={
             "A professional website, elevating the clinic's digital presence."
           }
-          link={"https://github.com/stephaniebrandao/project-flore-odontologica.git"}
+          gitLink={
+            "https://github.com/stephaniebrandao/project-flore-odontologica.git"
+          }
+          onlineLink={"flore-odontologica.vercel.app"}
         />
         <Card
           image={playground}
@@ -98,7 +105,8 @@ function MyPortfolio() {
           subtitle={
             "Interactive web tool that lets you customize card styles in real-time."
           }
-          link={""}
+          gitLink={""}
+          onlineLink={""}
         />
         <Card
           image={playground}
@@ -106,7 +114,8 @@ function MyPortfolio() {
           subtitle={
             "Interactive web tool that lets you customize card styles in real-time."
           }
-          link={""}
+          gitLink={""}
+          onlineLink={""}
         />
       </div>
 
