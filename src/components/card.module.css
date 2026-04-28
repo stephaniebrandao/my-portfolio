@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    height: 205px;
+    height: 225px;
     width: 200px;
     border: 1px solid #e5ddfd54;
     border-radius: 10px;
@@ -24,13 +24,19 @@
     margin: 10px 0;
 }
 
-.container > a {
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.container > .btns > a {
     display: flex;
     text-decoration: none;
     justify-content: center;
 }
 
-.container > a > button {
+.container > .btns > a > button {
     background-color: #7a4eff;
     color: white;
     cursor: pointer;
@@ -38,7 +44,7 @@
     width: 100%;
 }
 
-.container > a > button:hover {
+.container > .btns > a > button:hover {
     background-color: #1A1A1A;
     color: white;
     cursor: pointer;

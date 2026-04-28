@@ -4,18 +4,30 @@ type CardCharacteristics = {
   image: string;
   title: string;
   subtitle: string;
-  link: string;
+  gitLink: string;
+  onlineLink: string;
 };
 
-function Card({ image, title, subtitle, link }: CardCharacteristics) {
+function Card({
+  image,
+  title,
+  subtitle,
+  gitLink,
+  onlineLink,
+}: CardCharacteristics) {
   return (
     <div className={styles.container}>
       <img src={image} alt="" />
       <h3>{title}</h3>
       <p>{subtitle}</p>
-      <a href={link} target="_blank">
-        <button>View on GitHub</button>
-      </a>
+      <div className={styles.btns}>
+        <a href={gitLink} target="_blank">
+          <button>View on GitHub</button>
+        </a>
+        <a href={onlineLink} target="_blank">
+          <button>View website</button>
+        </a>
+      </div>
     </div>
   );
 }
