@@ -125,8 +125,8 @@ function MyPortfolio() {
           {currentYear} Stephanie Brandao. All rights reserved. |{" "}
           <a
             className={styles.linkCV}
-            href="/public/CV-frontend-stephanie-brandao-3.pdf"
-            download
+            href="/CV-frontend-stephanie-brandao-3.pdf"
+            download="CV-Stephanie-Brandao.pdf"
           >
             Get CV (PDF)
           </a>
