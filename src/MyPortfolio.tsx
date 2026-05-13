@@ -77,7 +77,7 @@ function MyPortfolio() {
             "Interactive web tool that lets you customize card styles in real-time."
           }
           gitLink={"https://github.com/stephaniebrandao/css-playground.git"}
-          onlineLink={"css-playground-sucq.vercel.app"}
+          onlineLink={"https://css-playground-sucq.vercel.app"}
         />
         <Card
           image={gameboy}
@@ -86,7 +86,7 @@ function MyPortfolio() {
           gitLink={
             "https://github.com/stephaniebrandao/PokemonGameBoyColor.git"
           }
-          onlineLink={"pokemon-gameboy-color.vercel.app"}
+          onlineLink={"https://pokemon-gameboy-color.vercel.app"}
         />
         <Card
           image={flore}
@@ -97,9 +97,9 @@ function MyPortfolio() {
           gitLink={
             "https://github.com/stephaniebrandao/project-flore-odontologica.git"
           }
-          onlineLink={"flore-odontologica.vercel.app"}
+          onlineLink={"https://flore-odontologica.vercel.app"}
         />
-        <Card
+        {/* <Card
           image={playground}
           title={"CSS Playground"}
           subtitle={
@@ -116,7 +116,7 @@ function MyPortfolio() {
           }
           gitLink={""}
           onlineLink={""}
-        />
+        /> */}
       </div>
 
       <footer>
