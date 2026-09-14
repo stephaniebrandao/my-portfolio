@@ -69,56 +69,58 @@ function MyPortfolio() {
         </p>
       </section>
 
-      <div className={styles.cards}>
-        <Card
+      <div className={styles.cardsContainer}>
+        <h2>Projects</h2>
+        <div className={styles.cards}>
+          <Card
+            image={playground}
+            title={"CSS Playground"}
+            subtitle={
+              "Interactive web tool that lets you customize card styles in real-time."
+            }
+            gitLink={"https://github.com/stephaniebrandao/css-playground.git"}
+            onlineLink={"https://css-playground-sucq.vercel.app"}
+          />
+          <Card
+            image={gameboy}
+            title={"Game Boy Color"}
+            subtitle={"A GameBoy Color project to show the first 151 Pokémons."}
+            gitLink={
+              "https://github.com/stephaniebrandao/PokemonGameBoyColor.git"
+            }
+            onlineLink={"https://pokemon-gameboy-color.vercel.app"}
+          />
+          <Card
+            image={flore}
+            title={"Flore Odontológica"}
+            subtitle={
+              "A professional website, elevating the clinic's digital presence."
+            }
+            gitLink={
+              "https://github.com/stephaniebrandao/project-flore-odontologica.git"
+            }
+            onlineLink={"https://flore-odontologica.vercel.app"}
+          />
+          {/* <Card
           image={playground}
           title={"CSS Playground"}
           subtitle={
             "Interactive web tool that lets you customize card styles in real-time."
-          }
-          gitLink={"https://github.com/stephaniebrandao/css-playground.git"}
-          onlineLink={"https://css-playground-sucq.vercel.app"}
-        />
-        <Card
-          image={gameboy}
-          title={"Game Boy Color"}
-          subtitle={"A GameBoy Color project to show the first 151 Pokémons."}
-          gitLink={
-            "https://github.com/stephaniebrandao/PokemonGameBoyColor.git"
-          }
-          onlineLink={"https://pokemon-gameboy-color.vercel.app"}
-        />
-        <Card
-          image={flore}
-          title={"Flore Odontológica"}
-          subtitle={
-            "A professional website, elevating the clinic's digital presence."
-          }
-          gitLink={
-            "https://github.com/stephaniebrandao/project-flore-odontologica.git"
-          }
-          onlineLink={"https://flore-odontologica.vercel.app"}
-        />
-        {/* <Card
-          image={playground}
-          title={"CSS Playground"}
-          subtitle={
-            "Interactive web tool that lets you customize card styles in real-time."
-          }
-          gitLink={""}
-          onlineLink={""}
-        />
-        <Card
-          image={playground}
-          title={"CSS Playground"}
-          subtitle={
-            "Interactive web tool that lets you customize card styles in real-time."
-          }
-          gitLink={""}
-          onlineLink={""}
-        /> */}
+            }
+            gitLink={""}
+            onlineLink={""}
+            />
+            <Card
+            image={playground}
+            title={"CSS Playground"}
+            subtitle={
+              "Interactive web tool that lets you customize card styles in real-time."
+              }
+              gitLink={""}
+              onlineLink={""}
+              /> */}
+        </div>
       </div>
-
       <footer>
         <FaRegCopyright />
         <p>
