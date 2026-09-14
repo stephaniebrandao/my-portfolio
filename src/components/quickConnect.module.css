@@ -17,7 +17,8 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: black;
+    background-color: #241748;
     color: white;
     cursor: pointer;
+    transform: translateY(-2px);
 }
