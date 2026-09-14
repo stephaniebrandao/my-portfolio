@@ -15,6 +15,7 @@
 }
 
 .container > h3 {
+    color: #241748;
     font-size: 16px;
     margin: 10px 0 0 0;
 }
@@ -45,8 +46,25 @@
 }
 
 .container > .btns > a > button:hover {
-    background-color: #1A1A1A;
+    background-color: #241748;
     color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container > .btns > a > .btnGit {
+    border: 1px solid #67598f;
+    background-color: transparent;
+    color: #67598f;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.container > .btns > a > .btnGit:hover {
+    border: 1px solid #67598f;
+    background-color: #f5f1ff;
+    color: #67598f;
     cursor: pointer;
     border-radius: 5px;
 }

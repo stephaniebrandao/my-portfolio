@@ -21,11 +21,11 @@ function Card({
       <h3>{title}</h3>
       <p>{subtitle}</p>
       <div className={styles.btns}>
-        <a href={gitLink} target="_blank">
-          <button>View on GitHub</button>
-        </a>
         <a href={onlineLink} target="_blank">
           <button>View website</button>
+        </a>
+        <a href={gitLink} target="_blank">
+          <button className={styles.btnGit}>View on GitHub</button>
         </a>
       </div>
     </div>
