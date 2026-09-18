@@ -1,4 +1,14 @@
-import { FaAt, FaGithub, FaLinkedinIn, FaRegCopyright } from "react-icons/fa";
+import {
+  FaAt,
+  FaCss3,
+  FaGithub,
+  FaHtml5,
+  FaJs,
+  FaLinkedinIn,
+  FaReact,
+  FaRegCopyright,
+} from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
 import stephanie from "./images/stephanie.png";
 import playground from "./images/css-playground.png";
 import gameboy from "./images/gameboy.png";
@@ -6,6 +16,7 @@ import flore from "./images/flore-odonto.png";
 import styles from "./myPortfolio.module.css";
 import QuickConnect from "./components/QuickConnect";
 import Card from "./components/Card";
+import CoreTech from "./components/coreTech";
 
 function MyPortfolio() {
   const currentYear = new Date().getFullYear();
@@ -26,7 +37,7 @@ function MyPortfolio() {
         </div>
         <div className={styles.firstContainer}>
           <div>
-            <h1>Stephanie Brandao</h1>
+            <h1>Stephanie Brandão</h1>
             <h2>Front-End Developer</h2>
             <p>
               Building performant, accessible, and user-centric web applications
@@ -59,14 +70,36 @@ function MyPortfolio() {
         </div>
       </nav>
       <section className={styles.secondContainer}>
-        <h2>About Me</h2>
-        <p>
-          I am a frontend developer with a keen eye for design and a passion for
-          performance. I thrive on turning ideas into functional code. With a
-          strong foundation in React and a focus on clean, reusable components,
-          I craft web experiences that are as enjoyable to build as they are to
-          use. Let's create something great together!
-        </p>
+        <div className={styles.aboutMe}>
+          <h2>About Me</h2>
+          <p>
+            I am a frontend developer with a keen eye for design and a passion
+            for performance. I thrive on turning ideas into functional code.
+            With a strong foundation in React and a focus on clean, reusable
+            components, I craft web experiences that are as enjoyable to build
+            as they are to use. Let's create something great together!
+          </p>
+        </div>
+        <div className={styles.techIcons}>
+          <h2>Core Technologies</h2>
+          <div className={styles.coreTechCards}>
+            <CoreTech subtitle={"HTML 5"}>
+              <FaHtml5 />
+            </CoreTech>
+            <CoreTech subtitle={"CSS 3"}>
+              <FaCss3 />
+            </CoreTech>
+            <CoreTech subtitle={"JavaScript"}>
+              <FaJs />
+            </CoreTech>
+            <CoreTech subtitle={"React"}>
+              <FaReact />
+            </CoreTech>
+            <CoreTech subtitle={"TypeScript"}>
+              <SiTypescript />
+            </CoreTech>
+          </div>
+        </div>
       </section>
 
       <div className={styles.cardsContainer}>

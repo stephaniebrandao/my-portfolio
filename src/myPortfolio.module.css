@@ -14,7 +14,7 @@ nav {
 
 h1, h2, h3 {
     margin: 10px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
 }
 
 h1, h3 {
@@ -25,13 +25,13 @@ h1, h3 {
     color: #67598f;
 }
 
-.secondContainer > h2, .cardsContainer > h2 {
+.secondContainer > .aboutMe > h2, .secondContainer > .techIcons > h2, .cardsContainer > h2 {
     color: #241748;
 }
 
 p {
     margin: 10px;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
 }
 
 .firstContainer {
@@ -50,7 +50,6 @@ p {
 .quickContainer {
     display: flex;
     flex-direction: column;
-    
 }
 
 .insideQuickContainer {
@@ -60,10 +59,44 @@ p {
 }
 
 .secondContainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 40px;
     margin: 0px 300px 100px 300px;
+}
+
+.aboutMe {
+    grid-column: 1/2;
+    line-height: 1.7;
+}
+
+.secondContainer > .aboutMe > p {
+    padding-right: 10px;
+}
+
+.techIcons {
+    box-sizing: border-box;
+    grid-column: 2/3;
+    background-color: #f5f1ff;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #241748;
+}
+
+.coreTechCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 15px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.coreTechCards > div {
+    flex: 0 0 28%;
+    display: flex;
     flex-direction: column;
-    max-width: 680px;
+    align-items: center;
 }
 
 .cardsContainer {
@@ -74,10 +107,10 @@ p {
 
 .cards {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 0 auto;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     margin: 10px 0px;
 }
 
@@ -87,17 +120,79 @@ footer {
     align-items: center;
     gap: 5px;
     background-color: #f5f1ff;
+    padding: 8px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
     font-size: 12px;
+    color: #241748;
 }
 
 .linkCV {
     text-decoration: none;
     color: #7a4eff;
+    font-weight: 600;
 }
 
 .linkCV:hover {
     text-decoration: underline;
+}
+
+/* ==========================================
+   RESPONSIVIDADE (MOBILE & TABLET)
+   ========================================== */
+
+   @media (max-width: 768px) {
+
+    nav, 
+    .secondContainer, 
+    .cardsContainer {
+        margin: 30px 20px !important;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .insideQuickContainer {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .secondContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .aboutMe {
+        grid-column: auto;
+    }
+
+    .secondContainer > .aboutMe > p {
+        padding-right: 0;
+    }
+
+    .techIcons {
+        grid-column: auto;
+        padding: 20px 10px;
+    }
+
+    .coreTechCards > div {
+        flex: 0 0 40%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 40px;
+        padding: 15px 0;
+    }
 }
