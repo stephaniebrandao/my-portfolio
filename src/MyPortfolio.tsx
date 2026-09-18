@@ -16,7 +16,7 @@ import flore from "./images/flore-odonto.png";
 import styles from "./myPortfolio.module.css";
 import QuickConnect from "./components/QuickConnect";
 import Card from "./components/Card";
-import CoreTech from "./components/coreTech";
+import CoreTech from "./components/CoreTech";
 
 function MyPortfolio() {
   const currentYear = new Date().getFullYear();
