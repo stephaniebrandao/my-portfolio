@@ -22,3 +22,31 @@
     cursor: pointer;
     transform: translateY(-2px);
 }
+
+/* ==========================================
+   RESPONSIVIDADE (TABLET & MOBILE)
+   ========================================== */
+
+/* Tablet (Telas até 1024px) */
+@media (max-width: 1024px) {
+    .childrenContainer {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Mobile (Telas até 768px) */
+@media (max-width: 768px) {
+    .childrenContainer {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* Mobile Pequeno (Telas até 480px) */
+@media (max-width: 480px) {
+    .childrenContainer {
+        width: 34px;
+        height: 34px;
+    }
+}

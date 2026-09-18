@@ -68,3 +68,58 @@
     cursor: pointer;
     border-radius: 5px;
 }
+
+/* ==========================================
+   RESPONSIVIDADE (TABLET & MOBILE)
+   ========================================== */
+
+/* Tablet (Telas até 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        width: 180px;
+        height: auto;
+    }
+
+    .container > img {
+        width: 100%;
+        height: 90px;
+        object-fit: cover;
+    }
+}
+
+/* Mobile (Telas até 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        padding: 12px;
+    }
+
+    .container > img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+    }
+
+    .container > h3 {
+        font-size: 15px;
+    }
+
+    .container > p {
+        font-size: 11.5px;
+    }
+
+    .container > .btns > a > button,
+    .container > .btns > a > .btnGit {
+        padding: 6px 0;
+        font-size: 12px;
+    }
+}
+
+/* Mobile Pequeno (Telas até 480px) */
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+    }
+}
